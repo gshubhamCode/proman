@@ -62,4 +62,9 @@ public class UserAdminController {
         return new ResponseEntity<CreateUserResponse>(userResponse, HttpStatus.CREATED);
 
     }
+
+    @GetMapping("/")
+    public  String index(){
+        return "App is live!";
+    }
 }
